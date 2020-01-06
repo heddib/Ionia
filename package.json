@@ -17,6 +17,6 @@
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
     "http-errors": "^1.7.3",
-    "mysql2": "^2.0.0",
+    "mysql2": "^2.0.0"
   }
 }
