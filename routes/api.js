@@ -48,7 +48,17 @@ function validate(method) {
                     .isEmpty()
                     .trim()
                     .escape()
-                    .withMessage("Description should not be empty")
+                    .withMessage("Description should not be empty"),
+                check('date')
+                    .isISO8601()
+                    .toDate()
+                    .withMessage("Date should be in ISO8601 format"),
+                check('lat')
+                    .isNumeric()
+                    .withMessage("Bad lat"),
+                check('lng')
+                    .isNumeric()
+                    .withMessage("Bad lng"),
             ];
         }
         case "PUT": {
@@ -68,7 +78,17 @@ function validate(method) {
                     .isEmpty()
                     .trim()
                     .escape()
-                    .withMessage("Description should not be empty")
+                    .withMessage("Description should not be empty"),
+                check('date')
+                    .isISO8601()
+                    .toDate()
+                    .withMessage("Date should be in ISO8601 format"),
+                check('lat')
+                    .isNumeric()
+                    .withMessage("Bad lat"),
+                check('lng')
+                    .isNumeric()
+                    .withMessage("Bad lng"),
             ];
         }
     }

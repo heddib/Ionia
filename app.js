@@ -27,9 +27,6 @@ var version = "/api/v1/";
 // All of these routes will be prefixed with /api
 app.use(version + "events", apiRouter);
 
-var testRouter = require('./routes/test');
-app.use('/test', testRouter);
-
 // non api route for our views
 app.get("/", (req, res) => {
     res.render("index");

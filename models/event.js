@@ -42,6 +42,10 @@ exports.addEvent = req => {
         {
             title: req.body.title,
             description: req.body.description,
+            city: req.body.city,
+            lat: req.body.lat,
+            lng: req.body.lng,
+            date: req.body.date,
             created_at: date,
             updated_at: date
         }
@@ -65,6 +69,10 @@ exports.updateEvent = req => {
     const updateEventData = [
         req.body.title,
         req.body.description,
+        req.body.city,
+        req.body.lat,
+        req.body.lng,
+        req.body.date,
         new Date(),
         req.params.id
     ];
