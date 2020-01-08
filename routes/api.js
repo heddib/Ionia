@@ -49,6 +49,12 @@ function validate(method) {
                     .trim()
                     .escape()
                     .withMessage("Description should not be empty"),
+                check("city")
+                    .not()
+                    .isEmpty()
+                    .trim()
+                    .escape()
+                    .withMessage("City should not be empty"),
                 check('date')
                     .isISO8601()
                     .toDate()
@@ -79,6 +85,12 @@ function validate(method) {
                     .trim()
                     .escape()
                     .withMessage("Description should not be empty"),
+                check("city")
+                    .not()
+                    .isEmpty()
+                    .trim()
+                    .escape()
+                    .withMessage("City should not be empty"),
                 check('date')
                     .isISO8601()
                     .toDate()
