@@ -60,10 +60,10 @@ function validate(method) {
                     .toDate()
                     .withMessage("Date should be in ISO8601 format"),
                 check('lat')
-                    .regex(/^[0-9]{1,2}([,.][0-9]{1,2})?$/)
+                    .isDecimal()
                     .withMessage("Bad lat"),
                 check('lng')
-                    .regex(/^[0-9]{1,2}([,.][0-9]{1,2})?$/)
+                    .isDecimal()
                     .withMessage("Bad lng"),
             ];
         }
@@ -96,10 +96,10 @@ function validate(method) {
                     .toDate()
                     .withMessage("Date should be in ISO8601 format"),
                 check('lat')
-                    .regex(/^[0-9]{1,2}([,.][0-9]{1,2})?$/)
+                    .isDecimal()
                     .withMessage("Bad lat"),
                 check('lng')
-                    .regex(/^[0-9]{1,2}([,.][0-9]{1,2})?$/)
+                    .isDecimal()
                     .withMessage("Bad lng"),
             ];
         }
