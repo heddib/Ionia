@@ -7,5 +7,5 @@
 Il faut une bdd valide pour l'utiliser.
 
 ```
-npm start - Démarrer le serveur
+npm run start - Démarrer le serveur
 ```
